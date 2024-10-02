@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../../assets/img/historia/icon.png"/>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .img-one{
+            background-image: url(../../assets/img/historia/1.png);
+            background-size: cover;
+            background-position: center center;
+        }
+        .img-two{
+            background-image: url(../../assets/img/historia/2.png);
+            background-size: cover;
+            background-position: center center;
+        }
+        .img-three{
+            background-image: url(../../assets/img/historia/3.png);
+            background-size: cover;
+            background-position: center center;
+        }
+        .img-four {
+            background-image: url(../../assets/img/historia/4.png);
+            background-size: cover;
+            background-position: center center;
+        }
+        .img-five {
+            background-image: url(../../assets/img/historia/5.png);
+            background-size: cover;
+            background-position: center center;
+        }
+        .img-six {
+            background-image: url(../../assets/img/historia/6.png);
+            background-size: cover;
+            background-position: center center;
+        }
+    </style>
+    <title>História - 1ºINFO</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../../assets/img/Marca_IFSP_2015_Bri_H_4-removebg-preview.png">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="../disciplinas.html" class="nav-link">Disciplinas</a></li>
+                    <li class="nav-item"><a href="https://bri.ifsp.edu.br/" target="_blank" class="nav-link">IFSP BRI</a></li>
+                </ul>
+            </div>
+
+            <div class="contato-button">
+                <button><a href="#">Contato</a></button>
+            </div>
+            
+            <div class="mobile-menu-icon">
+                <button onClick="menuShow()"><img class="icon" src="../../assets/img/menu_white_36dp.svg"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="../disciplinas.html" class="nav-link">Disciplinas</a></li>
+                <li class="nav-item"><a href="https://bri.ifsp.edu.br/" target="_blank" class="nav-link">IFSP BRI</a></li>
+            </ul>
+
+            <div class="contato-button">
+              <button><a href="#">Contato</a></button>  
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>História</h1>
+            <p>Profº Rubens Arantes Correa</p>
+        </div>
+        <div class="wrapper">
+            <h2>1º Bimestre</h2>
+            <div class="materias">
+                <span class="conteudo">
+                    <span class="single-img img-one">
+                        <span class="img-text">
+                            <h4>Introdução</h4>
+                            <p>Introdução a disciplina História</p>
+                        </span>
+                    </span>
+                </span>
+                <span class="conteudo">
+                    <span class="single-img img-two">
+                        <span class="img-text">
+                            <h4>Humanidade</h4>
+                            <p>Surgimento da humanidade</p>
+                        </span>
+                    </span>
+                </span>
+                <span class="conteudo">
+                    <span class="single-img img-three">
+                        <span class="img-text">
+                            <h4>Pré-História</h4>
+                            <p>Fases da pré-história</p>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </main>
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "../../assets/img/menu_white_36dp.svg";
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "../../assets/img/close_white_36dp.svg";
+            }
+        }
+    </script>
+</body>
+</html>
