@@ -92,11 +92,10 @@ header  {
     .corpo {
         flex-direction: column;
         align-items: center;
-
-        & .lateral {
+    }
+        .lateral {
             width: 80%;
         }
-    }
 
     .logo {
         padding: 0;
@@ -155,7 +154,6 @@ header  {
     .open {
         display: block;
     }
-}
 
 body{
     background: #252525;
@@ -175,12 +173,11 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    & h2 {
+}
+    h2 {
         margin-left: 8.5%; 
         padding: 10px;
     }
-}
 .materias{
     width: 1100px;
     height: auto;
@@ -298,11 +295,10 @@ a{
         padding: 0;
         margin-top: 30px;
         align-items: center;
-
-        & h2 {
+    }
+        h2 {
             margin-left:0;
         }
-    }
     .materias{
         width: 100%;
         display: flex;
@@ -314,28 +310,25 @@ a{
 
     .portfolio {
         flex-direction: column;
-
-        & p {
+    }
+        p {
             font-size: 0.5rem;
         }
-        & .portfolio-foto {
+        .portfolio-foto {
             height: 50%;
             width: 70%;
         }
 
-        & .portfolio-text {
+        .portfolio-text {
             height: 50%;
             width: 100%;
-
+        }
             & h1 {
                 font-size: 2rem;
             }
             & h2 {
                 font-size: 1rem;
             }
-        }
-    }
-}
 
 .principal {
     padding: 10px;
@@ -345,15 +338,14 @@ a{
     border-radius: 5px;
     width: 80%;
     margin: 10px;
-
-    & h1 {
+}
+    .principal h1 {
         padding-bottom: 10px;
     }
 
-    & p {
+    .principal p {
         padding-left: 5px;
     }
-}
 
 .lateral {
     display: flex;
@@ -364,24 +356,23 @@ a{
     border-radius: 5px;
     width: 20%;
     margin: 10px;
-
-    & .titulo {
+}
+    .lateral .titulo {
         text-align: center;
         margin-bottom: 10px;
         font-size: 1.3rem;
 
     }
 
-    & .prof {
+    .lateral .prof {
         padding: 5px;
         width: 100%;
         border-radius: 10px;
     }
 
-    & p {
+    .lateral p {
         margin-bottom: 10px;
     }
-}
 
 .corpo {
     display: flex;
@@ -406,27 +397,26 @@ a{
 }
 .portfolio-text {
     width: 70%;
-
-    & h1 {
+}
+    .portfolio-text h1 {
         font-size: 4rem;
         filter: drop-shadow(0 0 0.75rem rgb(83, 83, 83));
         transition: 0.5s ease-in-out;
         padding-bottom: 0;
     }
 
-    & h1:hover {
+    .portfolio-text h1:hover {
         filter: drop-shadow(0 0.2rem 1rem rgb(83, 83, 83));
     }
-    & h2 {
+    .portfolio-text h2 {
         font-size: 1.5rem;
         filter: drop-shadow(0 0 0.75rem rgb(83, 83, 83));
     }
-    & p {
+    .portfolio-text p {
         padding: 0;
         font-size: 1rem;
         margin-top: 7px;
     }
-}
 .portfolio-foto {
     width: 30%;
 }
