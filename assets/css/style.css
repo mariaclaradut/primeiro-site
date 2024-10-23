@@ -174,7 +174,7 @@ a{
     flex-direction: column;
     justify-content: center;
 }
-    h2 {
+    .wrapper h2 {
         margin-left: 8.5%; 
         padding: 10px;
     }
@@ -186,11 +186,10 @@ a{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-
-    & .conteudo {
+}
+    .conteudo {
         margin-bottom: 15px;
     }
-}
 .single-img{
     border-radius: 5px;
     display: flex;
@@ -296,7 +295,7 @@ a{
         margin-top: 30px;
         align-items: center;
     }
-        h2 {
+        .wrapper h2 {
             margin-left:0;
         }
     .materias{
@@ -304,14 +303,14 @@ a{
         display: flex;
         flex-direction: column;
     }
-    a{
+    .materias a{
         margin-bottom: 35px;
     }
 
     .portfolio {
         flex-direction: column;
     }
-        p {
+        .portfolio p {
             font-size: 0.5rem;
         }
         .portfolio-foto {
@@ -323,10 +322,10 @@ a{
             height: 50%;
             width: 100%;
         }
-            & h1 {
+            .portfolio-text h1 {
                 font-size: 2rem;
             }
-            & h2 {
+            .portfolio-text h2 {
                 font-size: 1rem;
             }
 
